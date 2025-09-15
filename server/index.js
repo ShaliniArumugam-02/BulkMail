@@ -21,7 +21,7 @@ const PORT = process.env.PORT || 5000
 // middleware
 
     app.use(cors({
-        origin:"http://localhost:5178",
+        origin:"https://bulkmail-1-ftxo.onrender.com/",
         credentials:true
     }))
 
