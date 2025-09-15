@@ -5,12 +5,12 @@ import { initializeApp } from "firebase/app";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
-  authDomain: "bulk-mail-d2cf7.firebaseapp.com",
-  projectId: "bulk-mail-d2cf7",
-  storageBucket: "bulk-mail-d2cf7.firebasestorage.app",
-  messagingSenderId: "382551161846",
-  appId: "1:382551161846:web:ec9591036e52f9a0b6e5d7"
+  apiKey:import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: "bulk-mail-a9e0f.firebaseapp.com",
+  projectId: "bulk-mail-a9e0f",
+  storageBucket: "bulk-mail-a9e0f.firebasestorage.app",
+  messagingSenderId: "905547313289",
+  appId: "1:905547313289:web:93f2fd591909f1cb159658"
 };
 
 // Initialize Firebase

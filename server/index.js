@@ -7,7 +7,7 @@
 import express from "express"
 import cors from "cors"
 import connectDB from "./src/config/db.js"
-import authRouter from "./src/routes/auth.route.js"
+import authRouter from './src/routes/auth.route.js'
 import mailRouter from "./src/routes/mail.route.js"
 import dotenv from "dotenv";
 import path from "path";
@@ -16,17 +16,18 @@ dotenv.config({ path: path.resolve("D:/Sha/FullStack Projects/BULK_MAIL/server/.
 
 // console.log("MONGO_URI:", process.env.MONGO_URI);
 
-
-
 const app = express() 
 const PORT = process.env.PORT || 5000
 
 // middleware
 
-    app.use(cors({
-        origin:"http://localhost:5178",
-        credentials:true
-    }))
+const allowedOrigins = ["http://localhost:5173", "http://localhost:5178"];
+
+app.use(cors({
+  origin: allowedOrigins,
+  credentials: true
+}));
+
 const __dirname = path.resolve();
 
 app.use(express.json())

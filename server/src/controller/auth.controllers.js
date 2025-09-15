@@ -5,7 +5,8 @@ import {User} from "../models/User.model.js"
 import bcryptjs from "bcryptjs"
 import jwt from "jsonwebtoken"
 import dotenv from "dotenv"
-dotenv.config()
+import path from "path";
+dotenv.config({ path: path.resolve("D:/Sha/FullStack Projects/BULK_MAIL/server/.env") });
 
 const signup = async(req,res,next)=>{
     try {
@@ -68,8 +69,6 @@ const google = async (req,res,next) => {
     }
     
 }
-
-
 
 // module.exports={signup, signin,google}
 export {signup, signin,google}
