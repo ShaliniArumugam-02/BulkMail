@@ -12,7 +12,7 @@ import mailRouter from "./src/routes/mail.route.js"
 import dotenv from "dotenv";
 import path from "path";
 import cookiesParser from "cookie-parser";
-dotenv.config({ path: path.resolve("D:/Sha/FullStack Projects/BULK_MAIL/server/.env") });
+dotenv.config();
 
 // console.log("MONGO_URI:", process.env.MONGO_URI);
 
@@ -21,7 +21,7 @@ const PORT = process.env.PORT || 5000
 
 // middleware
 
-const allowedOrigins = ["http://localhost:5173", "http://localhost:5178"];
+const allowedOrigins = ["https://bulkmail-10.onrender.com","http://localhost:5173", "http://localhost:5178"];
 
 app.use(cors({
   origin: allowedOrigins,

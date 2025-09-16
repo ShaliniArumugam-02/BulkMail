@@ -6,7 +6,7 @@ import bcryptjs from "bcryptjs"
 import jwt from "jsonwebtoken"
 import dotenv from "dotenv"
 import path from "path";
-dotenv.config({ path: path.resolve("D:/Sha/FullStack Projects/BULK_MAIL/server/.env") });
+dotenv.config();
 
 const signup = async(req,res,next)=>{
     try {

@@ -8,7 +8,8 @@ const firebaseConfig = {
   apiKey:import.meta.env.VITE_FIREBASE_API_KEY,
   authDomain: "bulk-mail-a9e0f.firebaseapp.com",
   projectId: "bulk-mail-a9e0f",
-  storageBucket: "bulk-mail-a9e0f.firebasestorage.app",
+  //storageBucket: "bulk-mail-a9e0f.firebasestorage.app",
+  storageBucket: "bulk-mail-a9e0f.appspot.com", 
   messagingSenderId: "905547313289",
   appId: "1:905547313289:web:93f2fd591909f1cb159658"
 };
